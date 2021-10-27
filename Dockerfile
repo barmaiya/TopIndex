@@ -1,7 +1,7 @@
 FROM amazonlinux:2
 
 RUN  yum update -y
-RUN sudo yum install python  python3  pip -y
+RUN  yum install python  python3  pip -y
 WORKDIR .
 COPY /TopIndexTech .
 RUN pip3  install -r requirements.txt
