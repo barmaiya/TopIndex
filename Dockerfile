@@ -1,7 +1,7 @@
 FROM centos:latest
 
-RUN apt-get update
-RUN apt-get install python3-dev python3-pip -y
+RUN yum update
+RUN yum install python3-dev python3-pip -y
 WORKDIR .
 COPY /TopIndexTech .
 RUN pip3  install -r requirements.txt
