@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM amazonlinux:2
 
 RUN yum update -y
 RUN sudo yum install python  python3  pip -y
