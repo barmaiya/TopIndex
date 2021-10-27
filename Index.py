@@ -1,4 +1,5 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify,render_template
+
 app = Flask(__name__)
 @app.route("/")
 def TopTech():
@@ -39,7 +40,9 @@ def TopTech():
 
         },
     ]
-    return jsonify(data)
+    return render_template('client.html', data=data)
+
+    #return jsonify(data)
 
 if __name__ == '__main__':
     app.run()
