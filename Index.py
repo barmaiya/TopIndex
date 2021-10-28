@@ -43,7 +43,6 @@ def TopTech():
     return render_template('client.html', data=data)
 
     #return jsonify(data)
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
 
